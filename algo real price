@@ -15,3 +15,9 @@ Time	Close	High	Low	Open	Volume	Typical Price	Price*Volume	Total PV	Total Volume
 09:40:00	38.90	38.92	38.88	38.91	4917	38.90	191283.59	8355512.92	214677.00	
 
 
+where P is the price of i-th trade and V is the size related to i-th trade. 
+In fact it takes five steps to calculate your first VWAP. First, only if we use intraday data for examination,
+we need to calculate typical price for our intervals. 
+Then multiply the price by period’s volume and create running total of these values for future trades. 
+Fourthly we create cumulative volume and in the end we divide cumulative multiplication of price and volume by running total of volume to obtain VWAP. 
+Even simpler, VWAP is a turnover divided by total volume.
